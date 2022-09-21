@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    outline: none;
+    
+}
+body{
+    background: #ecf0f3;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 120px 30px;
+    display: grid;
+    place-content: center;  
+  
+   
+}
+p{
+    padding: 10px 5px;
+}
+.maincard{
+    text-align: center;
+    position: relative;
+    width: 250px;
+    height: 320px;
+    perspective: 800px;
+       
+}
+
+
+.theCard{
+    position: relative; 
+    width: 100%;
+    height: 100%;
+    transition: all .9s ease;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    transform-style: preserve-3d;
+}
+
+.front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ecf0f3;
+    color: #000;
+    border-radius:10px ;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    box-shadow: -3px -3px 7px #ffff,3px 3px 5px;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+}
+
+.back{
+   
+   
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.maincard:hover .theCard {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+
+
+
